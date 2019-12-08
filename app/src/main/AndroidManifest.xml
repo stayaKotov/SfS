@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sfs_prto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".CurrentOrderClientActivity" />
+        <activity android:name=".NewOrderClientActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".NewOrderClient" />
+        <activity
+            android:name=".RunnerActivity"
+            android:label="@string/title_activity_runner" />
+        <activity
+            android:name=".ClientActivity"
+            android:label="@string/title_activity_client" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".EntryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

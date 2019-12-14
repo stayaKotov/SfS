@@ -23,12 +23,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/et_login_main"
+            android:id="@+id/et_email_main"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="stayakotov" />
+            android:text="r@ya.ru" />
 
         <EditText
             android:id="@+id/et_password_main"
@@ -38,6 +38,7 @@
             android:layout_marginBottom="5dp"
             android:ems="10"
             android:hint="Password"
+            android:text="123456"
             android:inputType="textPassword" />
 
         <Button
@@ -56,5 +57,6 @@
             android:layout_marginBottom="5dp"
             android:text="Registration" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

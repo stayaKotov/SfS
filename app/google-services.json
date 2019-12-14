@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "335408573640",
+    "firebase_url": "https://sfs-proto.firebaseio.com",
+    "project_id": "sfs-proto",
+    "storage_bucket": "sfs-proto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335408573640:android:0405cae4bed532a84409fd",
+        "android_client_info": {
+          "package_name": "com.example.sfs_prto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335408573640-bt9gfpbob9ccf82k65c4ufsj2ub54n39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZYYht6fhUT41yj-N8Y6yZjGuVBn4fXFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335408573640-bt9gfpbob9ccf82k65c4ufsj2ub54n39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

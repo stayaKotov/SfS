@@ -15,6 +15,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:id="@+id/et_new_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="r@ya.ru" />
 
         <EditText
             android:id="@+id/et_new_login"
@@ -56,15 +65,6 @@
             android:inputType="phone"
             android:text="89991788671" />
 
-        <EditText
-            android:id="@+id/et_new_email"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="r@ya.ru" />
 
         <LinearLayout
             android:layout_width="match_parent"

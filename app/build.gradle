@@ -1,8 +1,12 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
+//apply plugin: 'realm-android'
 apply plugin: 'kotlin-android-extensions'
+
+androidExtensions {
+    experimental = true
+}
 
 android {
     compileSdkVersion 28
@@ -10,7 +14,7 @@ android {
     defaultConfig {
         applicationId "com.example.sfs_prto"
         multiDexEnabled true
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -28,13 +32,18 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
     implementation 'org.litote.kmongo:kmongo:3.11.1'
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'org.mongodb:mongodb-driver:3.8.1'
+    implementation "com.xwray:groupie:2.7.0"
     implementation 'org.litote.kmongo:kmongo-coroutine:3.11.1'
     implementation 'org.litote.kmongo:kmongo-async:3.11.1'
     implementation 'org.jetbrains.anko:anko-common:0.9'
     implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'androidx.core:core-ktx:1.0.2'
@@ -53,3 +62,4 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }
+apply plugin: 'com.google.gms.google-services'

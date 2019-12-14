@@ -12,7 +12,7 @@ class RunnerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_runner)
+        setContentView(R.layout.runner)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
         val navController = findNavController(R.id.nav_host_fragment_runner)
@@ -20,7 +20,7 @@ class RunnerActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_runner_map, R.id.navigation_currentOrder, R.id.navigation_chat,
+                R.id.navigation_runner_map, R.id.navigation_currentOrder,
                 R.id.navigation_profile
             )
         )
